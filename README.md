@@ -14,7 +14,8 @@ Predator prey is a popular model to explore the effect population have on one an
 ## Done 
 - rk4
 - rk45
-- euler for approximating values
+- euler
+- modified euler
 
 ## Authors
 - Vincent Lee

@@ -8,13 +8,13 @@ Predator prey is a popular model to explore the effect population have on one an
 
 
 ## TODO 
-- Create an euler function to approximate values
 - Use ode45(built in), euler, rk4, (and rk45?) to model a predator prey relationship
 - Create an interactive graph
 
 ## Done 
 - rk4
 - rk45
+- euler for approximating values
 
 ## Authors
 - Vincent Lee

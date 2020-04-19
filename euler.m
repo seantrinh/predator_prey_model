@@ -5,7 +5,7 @@
 %       b - the upper, inclusive bound for t
 %       initial_condition - the initial condition for y(a)
 %       n - N+1 equally spaced approximations on the interval [a,b]
-%           produced
+%           are produced
 %   Output:
 %       2D array of (t, w), where w is the approximation at t
 %

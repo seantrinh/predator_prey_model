@@ -16,4 +16,7 @@ function rk4_model(func, tspan, y0, n)
         plot(t, y1, 'b.', t, y2, 'r.'); hold on
     end
     hold off
-    legend('Species 1', 'Species 2')
+    legend('Species 1', 'Species 2');
+    title("Runge Kutta 4th Order");
+    xlabel("Time");
+    ylabel("Population Size");

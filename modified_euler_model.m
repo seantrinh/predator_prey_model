@@ -16,4 +16,7 @@ function modified_euler_model(func, tspan, y0, n)
         plot(t, y1, 'b.', t, y2, 'r.'); hold on
     end
     hold off
-    legend('Species 1', 'Species 2')
+    legend('Species 1', 'Species 2');
+    title("Modified Euler's Method");
+    xlabel("Time");
+    ylabel("Population Size");

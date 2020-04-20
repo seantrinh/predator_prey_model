@@ -82,3 +82,10 @@ function predator_prey
     title("Phase Plot ODE 45 (Built-in)");
     xlabel("Prey");
     ylabel("Predator");
+    
+    figure(11)
+    plot(w_1(:,1),w_1(:,2),'-',w_2(:,1),w_2(:,2),'-',w_3(:,1),w_3(:,2),'-',w_4(:,1),w_4(:,2),'-',w_5(:,1),w_5(:,2),'-');
+    title('Phase Plane Plot for All')
+    legend('Euler','Modified Euler', 'rk4', 'rk45', 'ode45');
+    xlabel("Prey");
+    ylabel("Predator");

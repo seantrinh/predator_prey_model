@@ -43,3 +43,12 @@ function predator_prey
     title("Runge Kutta Fehlberg (rk45)");
     xlabel("Time");
     ylabel("Population Size");
+    
+    %ode45 (built-in)
+    figure(5)
+    [time_5, w_5] = ode45(f, tspan, y0);
+    plot(time_5, w_5(:,1), 'b.', time_5, w_5(:,2), 'r.');
+    legend('Species 1', 'Species 2');
+    title("ODE 45 (Built-in)");
+    xlabel("Time");
+    ylabel("Population Size");

@@ -9,13 +9,7 @@
 %           interval [a,b] in addition to the approximation at t=0
 function rk4_model(func, tspan, y0, n)
     [time, w] = rk4(func, tspan, y0, n);
-    for i=1:length(time)
-        t = time(i);
-        y1 = w(i,1);
-        y2 = w(i,2);
-        plot(t, y1, 'b.', t, y2, 'r.'); hold on
-    end
-    hold off
+    plot(time, w(:,1), 'b.', time, w(:,2), 'r.');
     legend('Species 1', 'Species 2');
     title("Runge Kutta 4th Order");
     xlabel("Time");

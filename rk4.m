@@ -9,8 +9,11 @@
 
 function [ret_t,ret_y] = rk4(f,tspan,y0,n)
     h = (tspan(2) - tspan(1)) / n;
-    ret_t = [tspan(1)];
-    ret_y = [y0];
+    ret_t = zeros(1, n+1);
+    ret_t(1) = tspan(1);
+    ret_y = zeros(n+1, 2);
+    ret_y(1,1) = y0(1);
+    ret_y(1,2) = y0(2);
     t = tspan(1);
     w = y0;
     for i = 1:n
@@ -20,7 +23,8 @@ function [ret_t,ret_y] = rk4(f,tspan,y0,n)
         K4 = h * f(t+h,w+K3);
         w =  w + (K1+2*K2+2*K3+K4)/6;
         t = tspan(1) + i*h;
-        ret_t = [ret_t;t];
-        ret_y = [ret_y;w];
+        ret_t(i+1) = t;
+        ret_y(i+1,1) = w(1);
+        ret_y(i+1,2) = w(2);
     end
 end

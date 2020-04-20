@@ -8,14 +8,8 @@
 %       n - the number of equally spaced approximations to produce on the
 %           interval [a,b] in addition to the approximation at t=0
 function modified_euler_model(func, tspan, y0, n)
-    approx = modified_euler(func, tspan, y0, n);
-    for i=1:length(approx)
-        t = approx(i,1);
-        y1 = approx(i,2);
-        y2 = approx(i,3);
-        plot(t, y1, 'b.', t, y2, 'r.'); hold on
-    end
-    hold off
+    [time_2, w_2] = modified_euler(func, tspan, y0, n);
+    plot(time_2, w_2(:,1), 'b.', time_2, w_2(:,2), 'r.');
     legend('Species 1', 'Species 2');
     title("Modified Euler's Method");
     xlabel("Time");

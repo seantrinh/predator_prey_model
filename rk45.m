@@ -1,3 +1,7 @@
+% Runge-Kutta-Fehlnerg 
+% This method uses varying step size
+% It is also known as rk45
+
 function [ret_t,ret_y] = rk45(f,tspan,y0,tol,max_h,min_h)
     t = tspan(1);
     w = y0;
@@ -14,7 +18,7 @@ function [ret_t,ret_y] = rk45(f,tspan,y0,tol,max_h,min_h)
         K5 = h * f(t+h, w + 439/216 * K1 - 8 * K2 + 3680/513 * K3 - 845/4104 *K4);
         K6 = h * f(t+1/2*h,w -8/27 *K1 + 2*K2 - 3544/2565 *K3 + 1859/4104 *K4 -11/40 *K5);
         
-        R = 1/h * abs(1/360*K1 - 128/4275 * K3 - 2197/75240 * K4 + 1/50 * K5 +2/55 * K6);
+        R = sum(1/h * abs(1/360*K1 - 128/4275 * K3 - 2197/75240 * K4 + 1/50 * K5 +2/55 * K6));
         
         if R <= tol
             t = t + h; 

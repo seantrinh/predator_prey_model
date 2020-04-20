@@ -8,8 +8,7 @@ Predator prey is a popular model to explore the effect population have on one an
 
 
 ## TODO 
-- Create phase plot to compare the different models used
-- Create an interactive graph
+- ?
 
 ## Done 
 - rk4
@@ -21,6 +20,8 @@ Predator prey is a popular model to explore the effect population have on one an
 - Model using rk4
 - Model using rk45
 - Model using ode45
+- Phase plot to compare the different models used
+- Interactive graph
 
 ## Authors
 - Vincent Lee

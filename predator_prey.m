@@ -4,6 +4,9 @@ function predator_prey
     tspan = [0, 10];
     y0 = [6, 2];
     n = 100;
+    tol = 0.1;
+    maxH = 0.1;
+    minH = 0.0005;
     
     %Euler
     figure(1)
@@ -29,5 +32,14 @@ function predator_prey
     plot(time_3, w_3(:,1), 'b.', time_3, w_3(:,2), 'r.');
     legend('Species 1', 'Species 2');
     title("Runge Kutta 4th Order");
+    xlabel("Time");
+    ylabel("Population Size");
+    
+    %rk45
+    figure(4)
+    [time_4, w_4] = rk45(f, tspan, y0, tol, maxH, minH);
+    plot(time_4, w_4(:,1), 'b.', time_4, w_4(:,2), 'r.');
+    legend('Species 1', 'Species 2');
+    title("Runge Kutta Fehlberg (rk45)");
     xlabel("Time");
     ylabel("Population Size");

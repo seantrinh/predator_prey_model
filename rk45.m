@@ -24,7 +24,7 @@ function [ret_t,ret_y] = rk45(f,tspan,y0,tol,max_h,min_h)
             t = t + h; 
             w = w + 25/216 * K1 + 1408/2565 *K3 + 2197/4104 *K4 - 1/5 * K5;
             ret_t = [ret_t;t];
-            ret_y = [ret_y;w];
+            ret_y = [ret_y;transpose([w(:,1)])];
         end
         delta = .84 * (tol/R)^(1/4);
         if delta <= .1 
@@ -44,7 +44,6 @@ function [ret_t,ret_y] = rk45(f,tspan,y0,tol,max_h,min_h)
         elseif h < min_h
             FLAG = 0;
             disp('minimum h exceeded');
-            exit(1);
         end
     end
 end

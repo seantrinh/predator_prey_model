@@ -8,7 +8,7 @@ Predator prey is a popular model to explore the effect population have on one an
 
 
 ## TODO 
-- Use ode45(built in) to model a predator prey relationship
+- Create phase plot to compare the different models used
 - Create an interactive graph
 
 ## Done 
@@ -20,6 +20,7 @@ Predator prey is a popular model to explore the effect population have on one an
 - Model using Modified Euler
 - Model using rk4
 - Model using rk45
+- Model using ode45
 
 ## Authors
 - Vincent Lee

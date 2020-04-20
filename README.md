@@ -8,7 +8,7 @@ Predator prey is a popular model to explore the effect population have on one an
 
 
 ## TODO 
-- Use ode45(built in), euler, rk4, (and rk45?) to model a predator prey relationship
+- Use ode45(built in) and rk45 to model a predator prey relationship
 - Create an interactive graph
 
 ## Done 
@@ -16,6 +16,9 @@ Predator prey is a popular model to explore the effect population have on one an
 - rk45
 - euler
 - modified euler
+- Model using Euler
+- Model using Modified Euler
+- Model using rk4
 
 ## Authors
 - Vincent Lee

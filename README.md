@@ -10,7 +10,7 @@ Predator prey is a popular model to explore the effect population have on one an
 You can run predator_prey.m to create static graphs or you can run the matlab app. Try both as the static has varied graphs.
 
 ## TODO 
-- ?
+- Paper
 
 ## Done 
 - rk4

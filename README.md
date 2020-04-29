@@ -9,10 +9,9 @@ Predator prey is a popular model to explore the effect population have on one an
 ## USE STATEMENT
 You can run predator_prey.m to create static graphs or you can run the matlab app. Try both as the static has varied graphs. predator_prey additionally gives you the option to change the form of the equation if you don't want to use the given 
 
+dx/dt=(a-by)x
 
-\frac{dx}{dt}=(a-by)x
-
-\frac{dy}{dt} = (-e+cx)y
+dy/dt = (-e+cx)y
 
 where y is the predator and x is the prey
 

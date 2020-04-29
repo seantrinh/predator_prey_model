@@ -10,17 +10,17 @@ Predator prey is a popular model to explore the effect population have on one an
 You can run predator_prey.m to create static graphs or you can run the matlab app. Try both as the static has varied graphs. predator_prey additionally gives you the option to change the form of the equation if you don't want to use the given 
 
 
-$\frac{dx}{dt}=(a-by)x$
+\frac{dx}{dt}=(a-by)x
 
-$\frac{dy}{dt} = (-e+cx)y$
+\frac{dy}{dt} = (-e+cx)y
 
-where $y$ is the predator and $x$ is the prey
+where y is the predator and x is the prey
 
 
 ## Results 
 Static folder contains the images of our prerun results. 
-- Cyclic shows the cyclic relationship between predator and prey. 
-- Frequent cycles is increased growth rates for both species leading to increase in the amount of cycles within the same amount of time. 
+- Cyclic shows the cyclic relationship between predator and prey. This was the function used f = @(t,y) [(2-.5*y(2))*y(1); (-1+.5*y(1))*y(2)];
+- Frequent cycles is increased growth rates for both species leading to increase in the amount of cycles within the same amount of time. f = @(t,y) [(6-.5*y(2))*y(1); (-3+.5*y(1))*y(2)]; n=1000
 - Extinction shows how under when growth rates of both species are less than one, they both become extinct.
 
 

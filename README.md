@@ -18,9 +18,9 @@ where y is the predator and x is the prey
 
 ## Results 
 Static folder contains the images of our prerun results. 
-- Cyclic shows the cyclic relationship between predator and prey. This was the function used f = @(t,y) [(2-.5*y(2))*y(1); (-1+.5*y(1))*y(2)]; n=100; a=0; b=10
-- Frequent cycles is increased growth rates for both species leading to increase in the amount of cycles within the same amount of time. f = @(t,y) [(6-.5*y(2))*y(1); (-3+.5*y(1))*y(2)]; n=1000
-- Extinction shows how under when growth rates of both species are less than one, they both become extinct. The following function was used: f = @(t,y) [(0.5-.5*y(2))*y(1); (-0.5+.5*y(1))*y(2)]; n=100; a=0; b=10
+- Cyclic shows the cyclic relationship between predator and prey. This was the function used f = @(t,y) [(2-.5*y(2))*y(1); (-1+.5*y(1))*y(2)]; n=100; tspan= [0, 10], y0 = [6, 2];
+- Frequent cycles is increased growth rates for both species leading to increase in the amount of cycles within the same amount of time. f = @(t,y) [(6-.5*y(2))*y(1); (-3+.5*y(1))*y(2)]; n=1000  tspan= [0, 10], y0 = [6, 2];
+- Extinction shows how when growth rates of both species are less than one, they both become extinct. The following function was used: f = @(t,y) [(0.5-.5*y(2))*y(1); (-0.5+.5*y(1))*y(2)]; n=100;  tspan= [0, 10], y0 = [6, 2];
 
 
 ## Done 
